@@ -129,7 +129,10 @@ function setupWhatsappButtons() {
 
   buttons.forEach((button) => {
     button.addEventListener("click", () => {
-      openWhatsapp(DEFAULT_WHATSAPP_MESSAGE);
+      // Verifica se o botão tem uma mensagem customizada
+      const customMessage = button.getAttribute("data-message");
+      const messageToSend = customMessage || DEFAULT_WHATSAPP_MESSAGE;
+      openWhatsapp(messageToSend);
     });
   });
 
