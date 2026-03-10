@@ -12,7 +12,7 @@
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seuusuario/Clinica.Otondo.git
+   git clone https://github.com/brunodada/Clinica.Otondo.git
    cd Clinica.Otondo
    ```
 2. Abra `index.html` no navegador de sua preferência.
