@@ -2,12 +2,12 @@
 // CONFIGURAÇÕES GERAIS
 // ===============================
 
-// Número fictício da clínica no formato internacional (Brasil)
-const WHATSAPP_NUMBER = "5511999999999";
+// Número da clínica no formato internacional (Brasil) - ajustar se necessário
+const WHATSAPP_NUMBER = "5551997565042";
 
 // Mensagem padrão para os botões gerais de agendamento
 const DEFAULT_WHATSAPP_MESSAGE =
-  "Olá, tenho interesse em agendar uma consulta na Clínica Sorriso Ideal. Pode me ajudar com os horários disponíveis?";
+  "Olá, tenho interesse em agendar uma consulta na Clínica Sorriso Ideal em Osório - RS. Pode me ajudar com os horários disponíveis?";
 
 document.addEventListener("DOMContentLoaded", () => {
   setupHeaderScrollEffect();
@@ -142,20 +142,18 @@ function setupWhatsappButtons() {
 }
 
 // ===============================
-// FORMULÁRIO -> WHATSAPP
+// FORMULÁRIO -> FORMSPREE
 // ===============================
 
 /**
  * Valida campos simples (obrigatórios) do formulário
- * e monta uma mensagem personalizada para o WhatsApp.
+ * e envia os dados para o Formspree.
  */
 function setupWhatsappForm() {
   const form = document.getElementById("form-whatsapp");
   if (!form) return;
 
   form.addEventListener("submit", (event) => {
-    event.preventDefault();
-
     const nomeInput = document.getElementById("nome");
     const telefoneInput = document.getElementById("telefone");
     const mensagemTextarea = document.getElementById("mensagem");
@@ -194,15 +192,13 @@ function setupWhatsappForm() {
       hasError = true;
     }
 
-    if (hasError) return;
+    if (hasError) {
+      // Impede o envio se houver erros
+      event.preventDefault();
+      return;
+    }
 
-    const customMessage =
-      `Olá, meu nome é ${nome}.\n` +
-      `Meu telefone/WhatsApp é: ${telefone}.\n\n` +
-      `Gostaria de:\n${mensagem}\n\n` +
-      `Mensagem enviada pelo site da Clínica Sorriso Ideal.`;
-
-    openWhatsapp(customMessage);
+    // Deixa o envio seguir o fluxo padrão do navegador (POST para o Formspree)
   });
 }
 
