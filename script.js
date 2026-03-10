@@ -127,11 +127,15 @@ function setupWhatsappButtons() {
   const buttons = document.querySelectorAll(".js-whatsapp-btn");
   const textLink = document.querySelector(".js-whatsapp-link");
 
+  console.log("Total de botões WhatsApp encontrados:", buttons.length);
+
   buttons.forEach((button) => {
-    button.addEventListener("click", () => {
+    button.addEventListener("click", (e) => {
+      console.log("Botão clicado:", button.textContent);
       // Verifica se o botão tem uma mensagem customizada
       const customMessage = button.getAttribute("data-message");
       const messageToSend = customMessage || DEFAULT_WHATSAPP_MESSAGE;
+      console.log("Mensagem a enviar:", messageToSend);
       openWhatsapp(messageToSend);
     });
   });
@@ -139,6 +143,7 @@ function setupWhatsappButtons() {
   if (textLink) {
     textLink.addEventListener("click", (event) => {
       event.preventDefault();
+      console.log("Link de WhatsApp clicado");
       openWhatsapp(DEFAULT_WHATSAPP_MESSAGE);
     });
   }
