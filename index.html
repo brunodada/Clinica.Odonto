@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Clínica Sorriso Ideal | Odontologia Humanizada com Tecnologia</title>
+  <meta name="description" content="Clínica Sorriso Ideal em Vila Azul. Tratamentos odontológicos com tecnologia, conforto e atendimento humanizado. Agende sua consulta pelo WhatsApp." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO básico -->
+  <meta name="robots" content="index,follow" />
+  <meta name="author" content="Clínica Sorriso Ideal" />
+
+  <!-- Fonte moderna e legível -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header fixo com navegação principal -->
+  <header class="header" id="topo">
+    <div class="container header__content">
+      <a href="#topo" class="logo" aria-label="Página inicial Clínica Sorriso Ideal">
+        <span class="logo__mark">SI</span>
+        <span class="logo__text">
+          <span class="logo__name">Clínica Sorriso Ideal</span>
+          <span class="logo__subtitle">Odontologia Integrada</span>
+        </span>
+      </a>
+
+      <!-- Menu desktop -->
+      <nav class="nav" aria-label="Navegação principal">
+        <ul class="nav__list">
+          <li><a href="#hero" class="nav__link">Início</a></li>
+          <li><a href="#sobre" class="nav__link">Sobre</a></li>
+          <li><a href="#tratamentos" class="nav__link">Tratamentos</a></li>
+          <li><a href="#diferenciais" class="nav__link">Diferenciais</a></li>
+          <li><a href="#depoimentos" class="nav__link">Depoimentos</a></li>
+          <li><a href="#faq" class="nav__link">Dúvidas</a></li>
+          <li><a href="#contato" class="nav__link">Contato</a></li>
+        </ul>
+      </nav>
+
+      <!-- Botão de agendamento em destaque -->
+      <button class="btn btn--primary header__cta js-whatsapp-btn">
+        Agendar Consulta
+      </button>
+
+      <!-- Botão hambúrguer (menu mobile) -->
+      <button class="header__toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-mobile">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <!-- Menu mobile -->
+    <nav class="nav-mobile" id="menu-mobile" aria-label="Navegação mobile">
+      <ul class="nav-mobile__list">
+        <li><a href="#hero" class="nav-mobile__link">Início</a></li>
+        <li><a href="#sobre" class="nav-mobile__link">Sobre</a></li>
+        <li><a href="#tratamentos" class="nav-mobile__link">Tratamentos</a></li>
+        <li><a href="#diferenciais" class="nav-mobile__link">Diferenciais</a></li>
+        <li><a href="#depoimentos" class="nav-mobile__link">Depoimentos</a></li>
+        <li><a href="#faq" class="nav-mobile__link">Dúvidas</a></li>
+        <li><a href="#contato" class="nav-mobile__link">Contato</a></li>
+        <li>
+          <button class="btn btn--primary btn--full js-whatsapp-btn">
+            Agendar pelo WhatsApp
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero section: foco em conversão -->
+    <section class="hero" id="hero">
+      <div class="container hero__content">
+        <div class="hero__text" data-animate="fade-up">
+          <p class="hero__kicker">Odontologia de confiança em Vila Azul</p>
+          <h1 class="hero__title">
+            Cuidamos do seu sorriso com <span>tecnologia</span>, <span>conforto</span> e <span>confiança</span>.
+          </h1>
+          <p class="hero__subtitle">
+            Na Clínica Sorriso Ideal, a Dra. Ana Martins e sua equipe unem
+            atendimento humanizado, equipamentos modernos e um ambiente acolhedor
+            para transformar a experiência no dentista em um momento leve e seguro.
+          </p>
+
+          <div class="hero__actions">
+            <button class="btn btn--primary js-whatsapp-btn">
+              Agendar pelo WhatsApp
+            </button>
+            <a href="#tratamentos" class="btn btn--outline">
+              Ver Tratamentos
+            </a>
+          </div>
+
+          <div class="hero__badges" aria-label="Diferenciais da clínica">
+            <div class="badge">
+              <span class="badge__icon" aria-hidden="true">🤝</span>
+              <span class="badge__text">Atendimento humanizado</span>
+            </div>
+            <div class="badge">
+              <span class="badge__icon" aria-hidden="true">🦷</span>
+              <span class="badge__text">Equipamentos modernos</span>
+            </div>
+            <div class="badge">
+              <span class="badge__icon" aria-hidden="true">📍</span>
+              <span class="badge__text">Localização fácil</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bloco visual do hero com placeholder elegante -->
+        <div class="hero__visual" aria-hidden="true" data-animate="fade-left">
+          <div class="hero__card">
+            <div class="hero__avatar">
+              <span class="hero__avatar-initials">AM</span>
+            </div>
+            <h2 class="hero__card-title">Dra. Ana Martins</h2>
+            <p class="hero__card-subtitle">CRO 12345 • Odontologia Estética e Implantes</p>
+            <ul class="hero__card-list">
+              <li>+10 anos de experiência clínica</li>
+              <li>Formação em grandes centros de referência</li>
+              <li>Tratamentos planejados de forma personalizada</li>
+            </ul>
+            <button class="btn btn--secondary btn--full js-whatsapp-btn">
+              Falar com a Dra. Ana
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção sobre a clínica -->
+    <section class="section section--alt" id="sobre">
+      <div class="container section__layout section__layout--reverse">
+        <div class="section__image" aria-hidden="true" data-animate="fade-right">
+          <div class="photo-card">
+            <div class="photo-card__overlay"></div>
+            <div class="photo-card__content">
+              <h2>Clínica Sorriso Ideal</h2>
+              <p>Odontologia completa em Vila Azul</p>
+            </div>
+          </div>
+        </div>
+        <div class="section__content" data-animate="fade-up">
+          <h2 class="section__title">Sobre a Clínica Sorriso Ideal</h2>
+          <p class="section__text">
+            A Clínica Sorriso Ideal nasceu com o propósito de oferecer uma experiência
+            odontológica diferente: mais leve, acolhedora e totalmente focada no cuidado
+            integral de cada paciente.
+          </p>
+          <p class="section__text">
+            Em um espaço moderno e confortável, unimos tecnologia de ponta, materiais
+            de alta qualidade e protocolos seguros para garantir resultados duradouros
+            e naturais, sempre respeitando o tempo e as necessidades de cada pessoa.
+          </p>
+          <p class="section__text">
+            Localizada no coração de Vila Azul, nossa clínica foi pensada para receber
+            adultos e famílias que buscam confiança, transparência e acompanhamento
+            próximo em todos os tratamentos.
+          </p>
+
+          <div class="section__highlights" aria-label="Destaques sobre a clínica">
+            <div class="chip">Atendimento para adultos e famílias</div>
+            <div class="chip">Ambiente climatizado e acolhedor</div>
+            <div class="chip">Tecnologia digital em diversos procedimentos</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de tratamentos -->
+    <section class="section" id="tratamentos">
+      <div class="container">
+        <header class="section__header" data-animate="fade-up">
+          <h2 class="section__title">Tratamentos Odontológicos</h2>
+          <p class="section__subtitle">
+            Cuidamos do seu sorriso em todas as fases da vida, com tratamentos
+            completos e personalizados para cada necessidade.
+          </p>
+        </header>
+
+        <div class="grid grid--3cols">
+          <!-- Limpeza e prevenção -->
+          <article class="card card--treatment" data-animate="fade-up">
+            <div class="card__icon" aria-hidden="true">🪥</div>
+            <h3 class="card__title">Limpeza e Prevenção</h3>
+            <p class="card__text">
+              Profilaxia periódica, remoção de tártaro e orientações personalizadas
+              de higiene para manter seus dentes e gengivas sempre saudáveis.
+            </p>
+          </article>
+
+          <!-- Clareamento dental -->
+          <article class="card card--treatment" data-animate="fade-up" data-animate-delay="0.1">
+            <div class="card__icon" aria-hidden="true">✨</div>
+            <h3 class="card__title">Clareamento Dental</h3>
+            <p class="card__text">
+              Tratamentos seguros e supervisionados para conquistar um sorriso mais
+              branco e luminoso, sem agredir o esmalte dos dentes.
+            </p>
+          </article>
+
+          <!-- Implantes dentários -->
+          <article class="card card--treatment" data-animate="fade-up" data-animate-delay="0.2">
+            <div class="card__icon" aria-hidden="true">🦷</div>
+            <h3 class="card__title">Implantes Dentários</h3>
+            <p class="card__text">
+              Soluções modernas para substituir dentes ausentes com conforto,
+              segurança e alta previsibilidade estética e funcional.
+            </p>
+          </article>
+
+          <!-- Ortodontia -->
+          <article class="card card--treatment" data-animate="fade-up">
+            <div class="card__icon" aria-hidden="true">📐</div>
+            <h3 class="card__title">Ortodontia</h3>
+            <p class="card__text">
+              Correção do posicionamento dos dentes e da mordida com aparelhos
+              modernos, discretos e planejamentos personalizados.
+            </p>
+          </article>
+
+          <!-- Tratamento de canal -->
+          <article class="card card--treatment" data-animate="fade-up" data-animate-delay="0.1">
+            <div class="card__icon" aria-hidden="true">❤️</div>
+            <h3 class="card__title">Tratamento de Canal</h3>
+            <p class="card__text">
+              Endodontia com técnicas modernas para aliviar a dor e preservar o dente,
+              sempre priorizando o seu conforto durante o procedimento.
+            </p>
+          </article>
+
+          <!-- Estética dental -->
+          <article class="card card--treatment" data-animate="fade-up" data-animate-delay="0.2">
+            <div class="card__icon" aria-hidden="true">🌟</div>
+            <h3 class="card__title">Estética Dental</h3>
+            <p class="card__text">
+              Restaurações estéticas, lentes de contato dental e harmonização do
+              sorriso para resultados naturais e harmônicos com o seu rosto.
+            </p>
+          </article>
+        </div>
+
+        <div class="section__cta" data-animate="fade-up">
+          <p>Quer saber qual tratamento é ideal para o seu sorriso?</p>
+          <button class="btn btn--primary js-whatsapp-btn">
+            Conversar com a equipe no WhatsApp
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de diferenciais -->
+    <section class="section section--alt" id="diferenciais">
+      <div class="container">
+        <header class="section__header" data-animate="fade-up">
+          <h2 class="section__title">Por que escolher a Sorriso Ideal?</h2>
+          <p class="section__subtitle">
+            Mais do que tratamentos, oferecemos uma experiência completa de cuidado,
+            respeito e atenção em cada consulta.
+          </p>
+        </header>
+
+        <div class="grid grid--3cols">
+          <article class="card card--feature" data-animate="fade-up">
+            <h3 class="card__title">Atendimento humanizado</h3>
+            <p class="card__text">
+              Escutamos suas necessidades, explicamos cada passo do tratamento e
+              respeitamos seus medos e limites, sempre com empatia.
+            </p>
+          </article>
+
+          <article class="card card--feature" data-animate="fade-up" data-animate-delay="0.1">
+            <h3 class="card__title">Profissionais especializados</h3>
+            <p class="card__text">
+              Equipe qualificada, em constante atualização, para oferecer o que há de
+              mais atual na odontologia estética e funcional.
+            </p>
+          </article>
+
+          <article class="card card--feature" data-animate="fade-up" data-animate-delay="0.2">
+            <h3 class="card__title">Equipamentos modernos</h3>
+            <p class="card__text">
+              Tecnologia a favor da sua saúde: diagnósticos mais precisos, tratamentos
+              mais confortáveis e resultados previsíveis.
+            </p>
+          </article>
+
+          <article class="card card--feature" data-animate="fade-up">
+            <h3 class="card__title">Ambiente confortável</h3>
+            <p class="card__text">
+              Consultórios aconchegantes, climatizados e pensados para reduzir a
+              ansiedade e tornar a consulta mais agradável.
+            </p>
+          </article>
+
+          <article class="card card--feature" data-animate="fade-up" data-animate-delay="0.1">
+            <h3 class="card__title">Agendamento rápido</h3>
+            <p class="card__text">
+              Facilite sua rotina com agendamentos pelo WhatsApp e horários flexíveis,
+              inclusive em alguns períodos estendidos.
+            </p>
+          </article>
+
+          <article class="card card--feature" data-animate="fade-up" data-animate-delay="0.2">
+            <h3 class="card__title">Excelência no cuidado</h3>
+            <p class="card__text">
+              Protocolos de biossegurança atualizados e foco em resultados duradouros,
+              sempre priorizando sua saúde geral.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de depoimentos -->
+    <section class="section" id="depoimentos">
+      <div class="container">
+        <header class="section__header" data-animate="fade-up">
+          <h2 class="section__title">O que nossos pacientes dizem</h2>
+          <p class="section__subtitle">
+            Histórias reais de pessoas que recuperaram a confiança ao sorrir.
+          </p>
+        </header>
+
+        <div class="grid grid--3cols">
+          <article class="card card--testimonial" data-animate="fade-up">
+            <p class="card__quote">
+              “Sempre tive muito medo de dentista, mas a Dra. Ana foi extremamente
+              cuidadosa e paciente. Hoje faço minhas manutenções com tranquilidade.”
+            </p>
+            <div class="card__patient">
+              <span class="card__patient-name">Mariana Costa</span>
+              <span class="card__patient-city">Vila Azul</span>
+            </div>
+            <div class="card__rating" aria-label="Avaliação 5 de 5 estrelas">
+              ★★★★★
+            </div>
+          </article>
+
+          <article class="card card--testimonial" data-animate="fade-up" data-animate-delay="0.1">
+            <p class="card__quote">
+              “Coloquei implantes na Sorriso Ideal e o resultado ficou muito natural.
+              O atendimento da equipe inteira é atencioso do início ao fim.”
+            </p>
+            <div class="card__patient">
+              <span class="card__patient-name">Ricardo Oliveira</span>
+              <span class="card__patient-city">Vila Azul</span>
+            </div>
+            <div class="card__rating" aria-label="Avaliação 5 de 5 estrelas">
+              ★★★★★
+            </div>
+          </article>
+
+          <article class="card card--testimonial" data-animate="fade-up" data-animate-delay="0.2">
+            <p class="card__quote">
+              “Levo meus dois filhos para acompanhar com a Dra. Ana. Eles se sentem
+              super à vontade e adoram a forma como são recebidos na clínica.”
+            </p>
+            <div class="card__patient">
+              <span class="card__patient-name">Fernanda Lima</span>
+              <span class="card__patient-city">Vila Azul</span>
+            </div>
+            <div class="card__rating" aria-label="Avaliação 5 de 5 estrelas">
+              ★★★★★
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ opcional com accordion -->
+    <section class="section section--alt" id="faq">
+      <div class="container">
+        <header class="section__header" data-animate="fade-up">
+          <h2 class="section__title">Dúvidas frequentes</h2>
+          <p class="section__subtitle">
+            Respondemos algumas das principais perguntas sobre nossos atendimentos.
+          </p>
+        </header>
+
+        <div class="faq" data-animate="fade-up">
+          <button class="faq__item" aria-expanded="false" type="button">
+            <span class="faq__question">Atendem em quais horários?</span>
+            <span class="faq__icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq__answer">
+            <p>
+              Atendemos de segunda a sexta, das 8h às 19h, e aos sábados das 8h às 13h,
+              mediante agendamento prévio. Em casos específicos, avaliamos horários
+              estendidos conforme a necessidade do paciente.
+            </p>
+          </div>
+
+          <button class="faq__item" aria-expanded="false" type="button">
+            <span class="faq__question">Realizam atendimento de emergência?</span>
+            <span class="faq__icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq__answer">
+            <p>
+              Sim. Em casos de dor intensa, trauma ou quebra de dentes, entre em contato
+              pelo WhatsApp para avaliarmos o encaixe em caráter de urgência.
+            </p>
+          </div>
+
+          <button class="faq__item" aria-expanded="false" type="button">
+            <span class="faq__question">Quais formas de pagamento são aceitas?</span>
+            <span class="faq__icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq__answer">
+            <p>
+              Aceitamos cartões de crédito e débito, PIX e, para alguns tratamentos,
+              oferecemos condições especiais e parcelamento. Nossa equipe explica tudo
+              com transparência antes de iniciar qualquer procedimento.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA final -->
+    <section class="section section--cta-final">
+      <div class="container section__cta-final" data-animate="fade-up">
+        <div>
+          <h2 class="section__title">Pronto para cuidar do seu sorriso?</h2>
+          <p class="section__subtitle">
+            Agende agora mesmo sua avaliação na Clínica Sorriso Ideal e descubra como
+            podemos transformar o seu sorriso com conforto e segurança.
+          </p>
+        </div>
+        <div class="section__cta-buttons">
+          <button class="btn btn--primary btn--lg js-whatsapp-btn">
+            Agendar consulta agora
+          </button>
+          <p class="section__cta-note">
+            Atendimento rápido pelo WhatsApp. Em poucos minutos nossa equipe retorna
+            com as melhores opções de horário para você.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato / rodapé com formulário simples -->
+    <section class="section section--contact" id="contato">
+      <div class="container section__layout">
+        <div class="section__content" data-animate="fade-up">
+          <h2 class="section__title">Contato e localização</h2>
+          <p class="section__text">
+            Estamos prontos para te atender e tirar todas as suas dúvidas sobre
+            tratamentos, valores e condições.
+          </p>
+
+          <ul class="contact-list">
+            <li>
+              <span class="contact-list__label">Telefone:</span>
+              <a href="tel:+5511999999999" class="contact-list__value">
+                (11) 9999-9999
+              </a>
+            </li>
+            <li>
+              <span class="contact-list__label">WhatsApp:</span>
+              <a href="#" class="contact-list__value js-whatsapp-link">
+                (11) 9 9999-9999
+              </a>
+            </li>
+            <li>
+              <span class="contact-list__label">Endereço:</span>
+              <span class="contact-list__value">
+                Rua do Sorriso, 123 - Centro, Vila Azul
+              </span>
+            </li>
+            <li>
+              <span class="contact-list__label">Horário de atendimento:</span>
+              <span class="contact-list__value">
+                Segunda a sexta: 8h às 19h • Sábado: 8h às 13h
+              </span>
+            </li>
+          </ul>
+
+          <div class="social" aria-label="Redes sociais">
+            <a href="#" class="social__link" aria-label="Instagram da Clínica Sorriso Ideal">
+              Instagram
+            </a>
+            <a href="#" class="social__link" aria-label="Facebook da Clínica Sorriso Ideal">
+              Facebook
+            </a>
+          </div>
+        </div>
+
+        <!-- Formulário simples que envia mensagem pré-pronta para o WhatsApp -->
+        <div class="section__content section__content--card" data-animate="fade-left">
+          <h3 class="section__title section__title--small">Agende pelo WhatsApp</h3>
+          <p class="section__text">
+            Preencha seus dados e clique em enviar. Vamos receber sua mensagem
+            diretamente no WhatsApp.
+          </p>
+
+          <form class="form" id="form-whatsapp" novalidate>
+            <div class="form__group">
+              <label for="nome">Nome completo</label>
+              <input type="text" id="nome" name="nome" placeholder="Como devemos te chamar?" required />
+              <span class="form__error" aria-live="polite"></span>
+            </div>
+
+            <div class="form__group">
+              <label for="telefone">Telefone / WhatsApp</label>
+              <input type="tel" id="telefone" name="telefone" placeholder="(11) 9 9999-9999" required />
+              <span class="form__error" aria-live="polite"></span>
+            </div>
+
+            <div class="form__group">
+              <label for="mensagem">O que você precisa?</label>
+              <textarea id="mensagem" name="mensagem" rows="4" placeholder="Ex: Quero agendar avaliação de clareamento." required></textarea>
+              <span class="form__error" aria-live="polite"></span>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--full">
+              Enviar pelo WhatsApp
+            </button>
+
+            <p class="form__note">
+              Você será redirecionado para o WhatsApp com a mensagem preenchida.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé final -->
+  <footer class="footer">
+    <div class="container footer__content">
+      <p class="footer__logo">Clínica Sorriso Ideal • Vila Azul</p>
+      <p class="footer__copy">
+        © <span id="ano-atual"></span> Clínica Sorriso Ideal. Todos os direitos reservados.
+      </p>
+      <p class="footer__credit">
+        Este site é um exemplo fictício para fins de demonstração.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Botão flutuante do WhatsApp para conversão constante -->
+  <button class="whatsapp-floating js-whatsapp-btn" aria-label="Agendar consulta pelo WhatsApp" type="button">
+    <span class="whatsapp-floating__icon" aria-hidden="true">💬</span>
+    <span class="whatsapp-floating__text">Agende pelo Whats</span>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
