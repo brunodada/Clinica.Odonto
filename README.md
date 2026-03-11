@@ -1,6 +1,6 @@
-# Clinica.Otondo
+# Clinica.Odonto
 
-**Clinica.Otondo** é um exemplo de landing page destinada a clínicas odontológicas. O objetivo deste repositório é fornecer um modelo simples em HTML, CSS e JavaScript que pode ser personalizado por profissionais da área para promover serviços, atrair novos pacientes e apresentar informações essenciais de contato.
+**Clinica.Odonto** é um exemplo de landing page destinada a clínicas odontológicas. O objetivo deste repositório é fornecer um modelo simples em HTML, CSS e JavaScript que pode ser personalizado por profissionais da área para promover serviços, atrair novos pacientes e apresentar informações essenciais de contato.
 
 ## 📁 Estrutura do Projeto
 
@@ -12,8 +12,8 @@
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/brunodada/Clinica.Otondo.git
-   cd Clinica.Otondo
+   git clone https://github.com/brunodada/Clinica.Odonto.git
+   cd Clinica.Odonto
    ```
 2. Abra `index.html` no navegador de sua preferência.
 3. Edite o conteúdo conforme necessário para refletir a identidade da clínica.
